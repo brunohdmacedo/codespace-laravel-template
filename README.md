@@ -11,6 +11,13 @@ This Codespace has everything you need to start exploring the [Laravel Framework
 || [SQLTools](https://vscode-sqltools.mteixeira.dev/en/home/) Database management for VS Code | `mtxr.sqltools` |
 | | SQLTools [MySQL Driver](https://vscode-sqltools.mteixeira.dev/en/drivers/my-sql/) | `mtxr.sqltools-driver-mysql` |
 
+## Run It Rightaway !
+
+1. `php artisan migrate:fresh --seed`
+
+2. `php artisan serve --port=80`
+
+
 ## Getting Started
 
 Optionally customize the database environment variables in `docker-compose.yml`. All values are set to `mariadb` by default:
