@@ -41,6 +41,12 @@ php artisan migrate
 php artisan db:seed
 ```
 
+or 
+
+```sh
+php artisan migrate:fresh --seed
+```
+
 ### Building the project
 
 To bundle your assets
@@ -58,6 +64,6 @@ npm run build
 To serve your project
 
 ```sh
-php artisan serve
+php artisan serve --port=80
 ```
 > Github Codespaces will automatically [forward ports](https://docs.github.com/en/codespaces/developing-in-codespaces/forwarding-ports-in-your-codespace) so you can view the running project on your local machine.
