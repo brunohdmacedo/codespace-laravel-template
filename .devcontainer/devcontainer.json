@@ -23,7 +23,12 @@
     "service": "app",
     "workspaceFolder": "/workspace",
 
-    "forwardPorts": [ 3306 ],
+    "forwardPorts": [ 80,3306 ],
 
-    "postCreateCommand": "cp .env.example .env && composer install && php artisan key:generate && npm i"
+    "postCreateCommand": "cp .env.example .env && composer install && php artisan key:generate && npm i",
+    "portsAttributes": {
+		"80": {
+			"label": "HTTP"
+		}
+	},
 }
